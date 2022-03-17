@@ -1,0 +1,23 @@
+<div class="temp-form w-75 pull-right">
+    <form #tempForm="ngForm" (ngSubmit)="onSubmit(tempForm)">
+        <div class="row">
+            <label for="name">Employee_Name:</label>
+            <!-- <input type="text" id="empName" name="eName" [(ngModel)]="empName"> -->
+            <input type="text" id="empName" name="empName" ngModel required>
+        </div>
+        <div class="row">
+            <label for="name">Contact No:</label>
+            <!-- <input type="text" id="contact no" name="cNumber" [(ngModel)]="cNumber"> -->
+            <input type="text" id="contact no" name="cNumber" ngModel required>
+        </div>
+        <div class="row">
+            <label for="name">Salary:</label>
+            <!-- <input type="text" id="Salary" name="sal" [(ngModel)]="salary"> -->
+            <input type="text" id="Salary" name="salary" ngModel required>
+        </div>
+        <br>
+        <div class="row">
+            <button class="btn btn-success" type="submit">Add</button>
+        </div>
+    </form>
+</div>
